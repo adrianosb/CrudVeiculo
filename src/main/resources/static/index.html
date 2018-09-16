@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+        <title>Veículos</title>
+    </head>
+    <body>
+        <div id="main-content" class="container">
+            <div class="row">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="placa">Placa</label>
+                            <input type="text" class="form-control text-uppercase" id="placa" aria-describedby="placaHelp" placeholder="Placa AAA1234">
+                            <small id="placaHelp" class="form-text text-muted">Campo obrigatório.</small>
+                        </div>
+                        <div class="col">
+                            <label for="cor">Cor</label>
+                            <select id="cor" class="form-control selectpicker" data-live-search="true" aria-describedby="corHelp"></select>
+                            <small id="corHelp" class="form-text text-muted">Campo obrigatório.</small>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="anoFabricacao">Ano fabricação</label>
+                            <input type="text" class="form-control" id="anoFabricacao" aria-describedby="anoFabricacaoHelp" placeholder="Ano fabricação 2016">
+                            <small id="anoFabricacaoHelp" class="form-text text-muted">Campo obrigatório.</small>
+                        </div>
+
+                        <div class="col">
+                            <label for="anoModelo">Ano modelo</label>
+                            <input type="text" class="form-control" id="anoModelo" aria-describedby="anoModeloHelp" placeholder="Ano modelo 2015">
+                            <small id="anoModeloHelp" class="form-text text-muted">Campo obrigatório.</small>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col">
+                            <button id="grava" class="btn btn-default" type="submit">Gravar</button>
+                            <button id="remover" class="btn btn-default" type="submit" disabled="disabled">Remover</button>
+                            <button id="limpar" class="btn btn-default" type="reset">Limpar</button>
+                        </div>
+                    </div>     
+                </form>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p id="alerta"></p>
+                <div>
+            </div>
+            <div class="row">
+                <!--<div class="col">-->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Placa</th>
+                            <th>Ano modelo</th>
+                            <th>Ano fabricação</th>
+                            <th>Cor</th>
+                            <th></th>                                
+                        </tr>
+                    </thead>
+                    <tbody id="veiculos">
+                    </tbody>
+                </table>
+                <!--</div>-->
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/i18n/defaults-pt_BR.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
